@@ -6,6 +6,9 @@ import java.sql.Statement;
 
 public class Select {
 
+	/*
+	Prueba select con base de datos
+	*/
 	
 	private static final String URL_BD = "jdbc:mysql://localhost:3306/libros";
 	private static final String CONTRASENNA = "";
@@ -13,7 +16,9 @@ public class Select {
 	
 
 	public static void main(String[] args) {
-
+		/*
+		Probar conexion
+		*/
 		try (Connection conexion = DriverManager.getConnection(URL_BD, USUARIO, CONTRASENNA);
 				Statement sentencia = conexion.createStatement();) {
 
